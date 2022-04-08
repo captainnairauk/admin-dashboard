@@ -41,6 +41,42 @@ body, html{
 }
 .header{
     grid-area: 1/2/2/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.upper-header{
+    display: flex;
+}
+
+.left-upper-header{
+    display: flex;
+    width: 70%;
+    align-self: center;
+}
+
+.right-upper-header{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    align-self: center;
+}
+
+.lower-header{
+    display: flex;
+}
+
+.left-lower-header{
+    display: flex;
+    width: 70%;
+    align-self: center;
+}
+
+.right-lower-header{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    align-self: center;
 }
 
 .projects{
