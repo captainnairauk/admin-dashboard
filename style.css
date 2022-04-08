@@ -20,6 +20,7 @@ body, html{
     display: flex;
     flex-direction: column;
     gap: 70px;
+    margin: 20px;
 }
 
 .upper-sidebar{
