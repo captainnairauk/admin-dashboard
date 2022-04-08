@@ -1,0 +1,36 @@
+*{
+    border: 1px solid black;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+    
+.side-bar{
+    grid-area: 1/1/4/2;
+}
+
+.header{
+    grid-area: 1/2/2/4;
+}
+
+.projects{
+    grid-area: 2/2/4/3;
+}
+
+.announcements{
+    grid-area: 2/3/3/4;
+}
+
+.trending{
+    grid-area: 3/3/4/4;
+}
