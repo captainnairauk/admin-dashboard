@@ -17,8 +17,27 @@ body, html{
     
 .side-bar{
     grid-area: 1/1/4/2;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
 }
 
+.upper-sidebar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.middle-sidebar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.lower-sidebar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+}
 .header{
     grid-area: 1/2/2/4;
 }
