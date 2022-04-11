@@ -1,78 +1,80 @@
-*{
+* {
     border: 1px solid black;
 }
 
-body, html{
+body,
+html {
     height: 100%;
     margin: 0;
-    
+
 }
 
-.container{
+.container {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
 }
-    
-.side-bar{
+
+.side-bar {
     grid-area: 1/1/4/2;
     display: flex;
     flex-direction: column;
     gap: 70px;
-    margin: 20px;
+    margin: 15px;
 }
 
-.upper-sidebar{
+.upper-sidebar {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-.middle-sidebar{
+.middle-sidebar {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(6, 1fr);
 }
 
-.lower-sidebar{
+.lower-sidebar {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(3, 1fr);
 }
-.header{
+
+.header {
     grid-area: 1/2/2/4;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
-.upper-header{
+.upper-header {
     display: flex;
 }
 
-.left-upper-header{
+.left-upper-header {
     display: flex;
     width: 70%;
     align-self: center;
 }
 
-.right-upper-header{
+.right-upper-header {
     display: flex;
     justify-content: space-around;
     width: 30%;
     align-self: center;
 }
 
-.lower-header{
+.lower-header {
     display: flex;
 }
 
-.left-lower-header{
+.left-lower-header {
     display: flex;
     width: 70%;
     align-self: center;
 }
 
-.right-lower-header{
+.right-lower-header {
     display: flex;
     justify-content: space-around;
     width: 30%;
@@ -83,10 +85,22 @@ body, html{
     grid-area: 2/2/4/3;
 }
 
-.announcements{
+.project-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 15px;
+}
+
+.user-action{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.announcements {
     grid-area: 2/3/3/4;
 }
 
-.trending{
+.trending {
     grid-area: 3/3/4/4;
 }
