@@ -23,7 +23,7 @@ html {
     flex-direction: column;
     gap: 70px;
     padding: 15px;
-    border: 1px solid black;
+    border-style: none;
     background: #4285F4;
 }
 
@@ -64,7 +64,7 @@ html {
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 15px;
-    border: 1px solid black;
+    border-style: none;
     background: #F9FAF8;
 }
 
@@ -111,6 +111,10 @@ input{
     align-items: center;
 }
 
+.left-lower-header img{
+    border-radius: 50%;
+}
+
 button{
     background: #4285F4;
     border-style: none;
@@ -120,6 +124,7 @@ button{
     color: white;
     font-weight: bold;
     font-size: x-small;
+    cursor: pointer;
 
 }
 
@@ -159,13 +164,23 @@ button{
 }
 
 .card{
-    border: 1px solid black;
     padding: 10px;
     background: #F9FAF8;
     border-radius: 10px;
     box-shadow: 2px 2px gainsboro;
+    border-style: none;
 }
 
+.title{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.content{
+    font-size: small;
+    font-weight: bold;
+    color: grey
+}
 .user-action{
     display: flex;
     justify-content: flex-end;
@@ -174,8 +189,19 @@ button{
 
 .announcements {
     grid-area: 2/3/3/4;
-    padding: 15px;
+    padding: 15px 15px 15px 0px;
     
+}
+
+.announcements-title{
+    font-weight: bold;
+    font-size: small;
+}
+
+.announcements-content{
+    font-weight: bold;
+    font-size: x-small;
+    color: grey
 }
 
 .right-sidebar{
@@ -192,15 +218,14 @@ button{
     margin: 10px;
     padding: 10px;
     font-size: small;
-    border: 1px solid black;
+    border-style: none;
     background: #F9FAF8;
     border-radius: 10px;
     box-shadow: 2px 2px gainsboro;
 }
 
 .trending {
-    padding: 15px;
-    margin: 0;
+    padding: 15px 15px 15px 0px;
 }
 
 .trending-wrapper{
@@ -212,8 +237,36 @@ button{
     padding: 10px;
     font-size: small;
     align-items: center;
-    border: 1px solid black;
+    border-style: none;
     background: #F9FAF8;
     border-radius: 10px;
     box-shadow: 2px 2px gainsboro;
+}
+
+.trending-wrapper img{
+    border-radius: 50%;
+}
+
+.trending-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-title, .trending-content{
+    margin: 0;
+}
+
+.trending-title{
+    font-weight: bold;
+    font-size: small;
+}
+
+.trending-content{
+    font-weight: bold;
+    color: grey
+}
+
+h4{
+    margin: 0;
+    padding-left: 15px;
 }
