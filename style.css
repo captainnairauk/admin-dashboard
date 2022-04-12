@@ -94,6 +94,11 @@ input{
     align-items: center;
 }
 
+.right-upper-header span{
+    font-weight: bold;
+    font-size: small;
+}
+
 .lower-header {
     display: flex;
 }
@@ -104,6 +109,33 @@ input{
     align-self: center;
     gap: 15px;
     align-items: center;
+}
+
+button{
+    background: #4285F4;
+    border-style: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: x-small;
+
+}
+
+.textbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox span{
+    font-weight: bold;
+    font-size: small;
+}
+
+.textbox p{
+    font-weight: bold;
+    font-size: medium;
 }
 
 .right-lower-header {
